@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/*------------------------------
+  変数
+--------------------------------*/
+/*------------------------------
+  reset
+--------------------------------*/
+*,
+::after,
+::before {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit; }
+
+ol,
+ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: inherit; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+input[type="submit"] {
+  background-color: inherit;
+  color: inherit; }
+
+/*------------------------------
+  pc、sp表示切り替え
+--------------------------------*/
+@media screen and (min-width: 769px) {
+  .sp {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+/*----------------------------------------------------
+ flex
+----------------------------------------------------*/
+.flex {
+  display: flex;
+  justify-content: space-between; }
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.flex-pc {
+  display: flex;
+  justify-content: space-between; }
+
+.flex-wrap-pc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.flex-revers {
+  flex-direction: row-reverse; }
+
+.flex-clm {
+  display: flex;
+  flex-direction: column; }
+
+.flex-clm-bottom {
+  margin-top: auto !important; }
+
+.mg-n20 {
+  margin: -20px; }
+
+.pd-20 {
+  padding: 20px; }
+
+.flex-item_1clm {
+  flex-basis: 100%; }
+
+.flex_item-2clm {
+  flex-basis: 50%; }
+
+.flex_item-3clm {
+  flex-basis: 33.3333%; }
+
+.flex_item--4clm {
+  flex-basis: 25%; }
+
+.flex_item-2clm-10 {
+  flex-basis: calc(50% - 10px); }
+
+.flex_item-3clm-10 {
+  flex-basis: calc(33.3% - 10px); }
+
+.flex_item-4clm-10 {
+  flex-basis: calc(25% - 10px); }
+
+@media screen and (max-width: 768px) {
+  .flex-pc {
+    display: block;
+    text-align: center; }
+  .flex-wrap-pc {
+    display: block;
+    text-align: center; }
+  .flex_item-2clm-10 + .flex_item-2clm-10 {
+    margin-top: 40px; }
+  .flex_item-3clm-10 + .flex_item-3clm-10 {
+    margin-top: 40px; }
+  .flex_item-4clm-10 + .flex_item-4clm-10 {
+    margin-top: 40px; } }
+
+/*----------------------------------------------------
+ float
+----------------------------------------------------*/
+.float-left {
+  float: left;
+  width: 50%; }
+
+.float-right {
+  float: right;
+  width: 50%; }
+
+.cf::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+@media screen and (max-width: 768px) {
+  .float-left {
+    float: none;
+    width: 100%; }
+  .float-right {
+    float: none;
+    width: 100%;
+    margin-top: 20px; } }
+
+/*------------------------------
+  全体共通
+-------------------------------*/
+html {
+  font-family: 'myFont', "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'palt';
+  font-feature-settings: 'palt';
+  font-size: 14px;
+  line-height: 1;
+  text-align: left; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom; }
+
+.wrap {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto; }
+
+.wrap_inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px; }
+
+section {
+  margin-bottom: 200px; }
+
+/*------------------------------
+  個別定義
+-------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
